@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_RbtBehaviorTree.145681952.00" t="ExcludeRecursive" />
+    <e p="D:\gitRepository\RbtBehaviorTree" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="3rd" t="Include">
+            <e p="LitJson" t="Include">
+              <e p="IJsonWrapper.cs" t="Include" />
+              <e p="JsonData.cs" t="Include" />
+              <e p="JsonException.cs" t="Include" />
+              <e p="JsonMapper.cs" t="Include" />
+              <e p="JsonMockWrapper.cs" t="Include" />
+              <e p="JsonReader.cs" t="Include" />
+              <e p="JsonWriter.cs" t="Include" />
+              <e p="Lexer.cs" t="Include" />
+              <e p="ParserToken.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RbtBehaviorTree" t="Include">
+            <e p="BTData" t="Include">
+              <e p="BDataBase.cs" t="Include" />
+            </e>
+            <e p="BTNode" t="Include">
+              <e p="Base" t="Include">
+                <e p="BNodeAction.cs" t="Include" />
+                <e p="BNodeBase.cs" t="Include" />
+                <e p="BNodeComposite.cs" t="Include" />
+                <e p="BNodeCondition.cs" t="Include" />
+                <e p="BNodeDecorator.cs" t="Include" />
+                <e p="BNodeRoot.cs" t="Include" />
+                <e p="BNodeType.cs" t="Include" />
+              </e>
+              <e p="CompositeNode" t="Include">
+                <e p="BNodeLoop.cs" t="Include" />
+                <e p="BNodeParallel.cs" t="Include" />
+                <e p="BNodeRandom.cs" t="Include" />
+                <e p="BNodeSelector.cs" t="Include" />
+                <e p="BNodeSequence.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="RbtBehaviorTree.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
