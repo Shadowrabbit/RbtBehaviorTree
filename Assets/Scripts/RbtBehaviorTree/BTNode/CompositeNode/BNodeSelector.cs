@@ -34,13 +34,13 @@ namespace RbtBehaviorTree.BTNode.CompositeNode
         protected override ActionResult OnRunning(ref BDataBase bData)
         {
             //全部子节点失败 
-            if (_failedNodeCount >= _listChilds.Count)
+            if (_failedNodeCount >= listChildNodes.Count)
             {
                 return ActionResult.Failure;
             }
 
             //当前队列中正在运行的节点
-            var node = _listChilds[_failedNodeCount];
+            var node = listChildNodes[_failedNodeCount];
             //执行该节点动作
             var actionResult = node.UpdateNode(ref bData);
             //某个节点成功则选择节点成功

@@ -30,8 +30,8 @@ namespace RbtBehaviorTree.BTNode.Base
         /// </summary>
         public virtual BNodeType NodeType => BNodeType.None; //节点类型
 
-        protected BNodeBase _parent; //父节点
-        protected List<BNodeBase> _listChilds = new List<BNodeBase>(); //子节点列表
+        public BNodeBase parent = null; //父节点
+        public List<BNodeBase> listChildNodes = new List<BNodeBase>(); //子节点列表
         private ActionResult _actionResult; //节点执行结果
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace RbtBehaviorTree.BTNode.Base
         /// <param name="bNode"></param>
         public void AddNode(ref BNodeBase bNode)
         {
-            _listChilds.Add(bNode);
+            listChildNodes.Add(bNode);
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace RbtBehaviorTree.BTNode.Base
         /// <param name="bNode"></param>
         public void RemoveNode(ref BNodeBase bNode)
         {
-            _listChilds.Remove(bNode);
+            listChildNodes.Remove(bNode);
         }
 
         /// <summary>
@@ -109,8 +109,8 @@ namespace RbtBehaviorTree.BTNode.Base
         /// <param name="bNode"></param>
         public void InsertNode(BNodeBase targetNode, ref BNodeBase bNode)
         {
-            var index = _listChilds.FindIndex((node) => node == targetNode);
-            _listChilds.Insert(index, bNode);
+            var index = listChildNodes.FindIndex((node) => node == targetNode);
+            listChildNodes.Insert(index, bNode);
         }
 
         /// <summary>
@@ -120,8 +120,8 @@ namespace RbtBehaviorTree.BTNode.Base
         /// <param name="bNode"></param>
         public void ReplaceNode(BNodeBase targetNode, ref BNodeBase bNode)
         {
-            var index = _listChilds.FindIndex((node) => node == targetNode);
-            _listChilds[index] = bNode;
+            var index = listChildNodes.FindIndex((node) => node == targetNode);
+            listChildNodes[index] = bNode;
         }
     }
 }

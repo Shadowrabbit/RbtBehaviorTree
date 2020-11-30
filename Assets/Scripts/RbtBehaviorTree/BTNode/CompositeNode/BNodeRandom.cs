@@ -21,12 +21,12 @@ namespace RbtBehaviorTree.BTNode.CompositeNode
         {
             base.OnEnter(ref bData);
             //随机选个子节点
-            _runningIndex = Random.Range(0, this._listChilds.Count);
+            _runningIndex = Random.Range(0, this.listChildNodes.Count);
         }
 
         protected override ActionResult OnRunning(ref BDataBase bData)
         {
-            return _listChilds[_runningIndex].UpdateNode(ref bData);
+            return listChildNodes[_runningIndex].UpdateNode(ref bData);
         }
     }
 }

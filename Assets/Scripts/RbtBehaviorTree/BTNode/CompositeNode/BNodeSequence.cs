@@ -34,13 +34,13 @@ namespace RbtBehaviorTree.BTNode.CompositeNode
         protected override ActionResult OnRunning(ref BDataBase bData)
         {
             //完成了队列中的全部节点
-            if (_finishedNodeCount >= _listChilds.Count)
+            if (_finishedNodeCount >= listChildNodes.Count)
             {
                 return ActionResult.Success;
             }
 
             //当前队列中正在运行的节点
-            var node = _listChilds[_finishedNodeCount];
+            var node = listChildNodes[_finishedNodeCount];
             //执行该节点动作
             var actionResult = node.UpdateNode(ref bData);
             //某个节点失败则本队列失败

@@ -24,7 +24,7 @@ namespace RbtBehaviorTree.BTNode.CompositeNode
             _finishedNodeCount = 0;
             //将所有子节点标记为未完成
             _mapNodeIndexToComplete.Clear();
-            for (var i = 0; i < _listChilds.Count; i++)
+            for (var i = 0; i < listChildNodes.Count; i++)
             {
                 _mapNodeIndexToComplete.Add(i, false);
             }
@@ -33,13 +33,13 @@ namespace RbtBehaviorTree.BTNode.CompositeNode
         protected override ActionResult OnRunning(ref BDataBase bData)
         {
             //全部节点执行完毕
-            if (_finishedNodeCount >= _listChilds.Count)
+            if (_finishedNodeCount >= listChildNodes.Count)
             {
                 return ActionResult.Success;
             }
 
             //尝试执行每一个子节点
-            for (var i = 0; i < _listChilds.Count; i++)
+            for (var i = 0; i < listChildNodes.Count; i++)
             {
                 //这个节点已经执行完毕 跳过
                 if (_mapNodeIndexToComplete[i])
@@ -48,7 +48,7 @@ namespace RbtBehaviorTree.BTNode.CompositeNode
                 }
 
                 //当前子节点的执行结果
-                var actionResult = _listChilds[i].UpdateNode(ref bData);
+                var actionResult = listChildNodes[i].UpdateNode(ref bData);
                 //当前节点执行中 跳过
                 if (actionResult == ActionResult.Running) continue;
                 //当前子节点执行完毕

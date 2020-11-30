@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:rbtBt" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd9fbbb-a2bb-4cc3-896c-710f8fb4f7bb" name="Default Changelist" comment="" />
+    <list default="true" id="5bd9fbbb-a2bb-4cc3-896c-710f8fb4f7bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeRoot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.DocZh.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.DocZh.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.023.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.023.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Messenger.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Messenger.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.UIWidgets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.UIWidgets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RbtBehaviorTree.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RbtBehaviorTree.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/ProcessJobs/2992039c52923dad903a8c0db934f209.bakert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityLockfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-0cfe2789b79876b42afe23186ef48420" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-1699403a1ff13db418d31f0e925810fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-1e0654c0c0e649442a7ea16da004df42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-24b448478018a3f46964b750f9fdfc46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-2f23019af7e6fdf4a97e33a659834a5e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-57b7a10ec8ff18f4c81cb98c9bea13f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-6054426324f0be04a8a980d523146337" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-708cfdf6e729c03488371333744c73bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-70ba3b0eec44c244888437aed5a35e3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-84709f7c4f5d3e84c8d992ab8fa795b9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-84c974b9e38f5d84a8cf20f913ef3519" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-8ff92429c19403846a5ecc6f455acbfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a1cb47ebd345f2345bb514e898509df6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a2c4172e0cc63184aaff872a657d12dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a421cd88872b1884e84055b76989c3ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a6ddcd26d48ad234ea404957c38aed28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-ae432b17e65cf614c9644dfc48a5ebd0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-b0af037f04df6084b9595b6911d0f3da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-b325598f7875b6748acadfbf1eeffa24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-b7e4d7e7e734bf744b9a65b827fd0398" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-ba6384ccef1bad946bdbcc1e92a8c046" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-c4c6732afae53e44282c4d8f9fc66487" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-d8856c6ba8797b147a72b6db3715669a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,33 +106,51 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeRoot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/8f/c2b17253/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/fd/532f4e7d/GUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/51/58c0f930/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB3709D4-3DAE-4F5F-B978-5D5202B86B97/b6/03b297f4/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/88/92cec5ff/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/0e/6788d8fc/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base.resx" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAcition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeRoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeIterator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeRoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/RbtBTreeMainWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Texture2DFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/TexLineFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" />
       </list>
     </option>
   </component>
@@ -50,7 +163,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderCSharpFileTemplatesSettingsId" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -83,6 +196,8 @@
       <updated>1606643259755</updated>
       <workItem from="1606643308101" duration="1342000" />
       <workItem from="1606644903190" duration="11068000" />
+      <workItem from="1606699256609" duration="2340000" />
+      <workItem from="1606712127522" duration="22814000" />
     </task>
     <servers />
   </component>
@@ -91,13 +206,29 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="193" y="0" key="SettingsEditor" timestamp="1606645386264">
+    <state x="193" y="0" key="SettingsEditor" timestamp="1606714878496">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606645386264" />
+    <state x="193" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606714878496" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606716653308">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1606716653308" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 ﻿// ******************************************************************
 //       /\ /|       @file       BDataBase.cs
-//       \ V/        @brief      
+//       \ V/        @brief      行为树数据基类
 //       | "")       @author     Shadowrabbit, yingtu0401@gmail.com
 //       /  |                    
 //      /  \\        @Modified   2020-11-29 18:08:39
