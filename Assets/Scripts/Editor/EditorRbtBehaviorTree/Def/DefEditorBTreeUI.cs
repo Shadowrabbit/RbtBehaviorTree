@@ -9,7 +9,7 @@
 
 using UnityEngine;
 
-namespace Editor.EditorRbtBehaviorTree.Def
+namespace SR.RbtBehaviorTree
 {
     public class DefEditorBTreeUI
     {
@@ -18,11 +18,12 @@ namespace Editor.EditorRbtBehaviorTree.Def
         public static int BUTTON_HEIGHT = 40; //按钮高度
         public static int BUTTON_WIDTH = 200; //按钮宽度
         public static int POPUP_WIDTH = 100; //选择框宽度
+        public static int TITLE_WIDTH = 70; //标题框宽度
         public static int NODE_POLY_LINE_WIDTH = 20; //节点前方标记线的宽度
-        public static string SAVE = "Save";
-        public static string LOAD = "Load";
-        public static string CREATE = "Create";
-        public static string CLEAR = "Clear";
+        public static string SAVE = "Save Tree";
+        public static string LOAD = "Load Tree";
+        public static string CREATE = "Create Tree";
+        public static string CLEAR = "Clear All Nodes";
 
         public static GUIContent CONTENT_TITLE_MAIN = new GUIContent("BTreeMainWindow"); //主页面标题
     }

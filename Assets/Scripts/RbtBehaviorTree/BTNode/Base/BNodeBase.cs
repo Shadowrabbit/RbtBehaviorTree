@@ -8,9 +8,8 @@
 // ******************************************************************
 
 using System.Collections.Generic;
-using RbtBehaviorTree.BTData;
 
-namespace RbtBehaviorTree.BTNode.Base
+namespace SR.RbtBehaviorTree
 {
     public class BNodeBase
     {

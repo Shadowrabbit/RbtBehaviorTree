@@ -7,11 +7,9 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-using RbtBehaviorTree.BTData;
-using RbtBehaviorTree.BTNode.Base;
 using UnityEngine;
 
-namespace RbtBehaviorTree.BTNode.CompositeNode
+namespace SR.RbtBehaviorTree
 {
     public class BNodeRandom : BNodeComposite
     {

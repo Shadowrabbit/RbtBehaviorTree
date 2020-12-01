@@ -7,7 +7,7 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-namespace Base
+namespace SR.Base
 {
     public class SingletonBase<T> where T : class, new()
     {

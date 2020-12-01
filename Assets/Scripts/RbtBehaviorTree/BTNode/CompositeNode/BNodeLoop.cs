@@ -7,10 +7,7 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-using System;
-using RbtBehaviorTree.BTNode.Base;
-
-namespace RbtBehaviorTree.BTNode.CompositeNode
+namespace SR.RbtBehaviorTree
 {
     public class BNodeLoop : BNodeComposite
     {

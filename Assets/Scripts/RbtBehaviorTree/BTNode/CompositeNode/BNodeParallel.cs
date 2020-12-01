@@ -8,10 +8,8 @@
 // ******************************************************************
 
 using System.Collections.Generic;
-using RbtBehaviorTree.BTData;
-using RbtBehaviorTree.BTNode.Base;
 
-namespace RbtBehaviorTree.BTNode.CompositeNode
+namespace SR.RbtBehaviorTree
 {
     public class BNodeParallel : BNodeComposite
     {

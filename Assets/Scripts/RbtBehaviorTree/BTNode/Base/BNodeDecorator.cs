@@ -7,7 +7,7 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-namespace RbtBehaviorTree.BTNode.Base
+namespace SR.RbtBehaviorTree
 {
     public class BNodeDecorator : BNodeBase
     {

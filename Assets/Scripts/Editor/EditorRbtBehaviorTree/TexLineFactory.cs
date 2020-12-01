@@ -7,10 +7,10 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-using Base;
+using SR.Base;
 using UnityEngine;
 
-namespace Editor.EditorRbtBehaviorTree
+namespace SR.RbtBehaviorTree
 {
     public class TexLineFactory : SingletonBase<TexLineFactory>
     {

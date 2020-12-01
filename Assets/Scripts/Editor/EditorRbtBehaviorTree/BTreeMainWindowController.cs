@@ -8,19 +8,18 @@
 // ******************************************************************
 
 using System;
-using RbtBehaviorTree;
-using RbtBehaviorTree.BTNode.Base;
+using UnityEngine;
 
-namespace Editor.EditorRbtBehaviorTree
+namespace SR.RbtBehaviorTree
 {
     public class BTreeMainWindowController
     {
-        private BTreeMainWindow _view; //视图
-        private BTree _model; //数据模型
         public BTree Model => _model;
         public int rootNodeTypeIndex = -1; //根节点类型索引
         public BNodeBase selectedNode; //选中的节点
-        public BNodeBase targetNode; //目标节点
+        public bool isNodeInDragging; //正在移动节点
+        private readonly BTreeMainWindow _view; //视图
+        private BTree _model; //数据模型
 
         /// <summary>
         /// 构造器
@@ -30,15 +29,6 @@ namespace Editor.EditorRbtBehaviorTree
         {
             //视图绑定
             _view = view;
-        }
-
-        /// <summary>
-        /// 设置数据
-        /// </summary>
-        /// <param name="model"></param>
-        public void SetModel(BTree model)
-        {
-            _model = model;
         }
 
         /// <summary>
@@ -60,13 +50,23 @@ namespace Editor.EditorRbtBehaviorTree
         /// </summary>
         public void Clear()
         {
+            if (_model == null)
+            {
+                Debug.LogError("行为树不存在!");
+                return;
+            }
+
+            _model.rootNode.listChildNodes = null;
         }
 
         /// <summary>
-        /// 创建
+        /// 创建行为树
         /// </summary>
         public void Create()
         {
+            var rootNode = BNodeFactory.Instance.Create(typeof(BNodeSequence));
+            _model = new BTree {name = "New Tree", rootNode = rootNode};
+            rootNodeTypeIndex = BNodeFactory.Instance.GetCompositeNodeIndex(typeof(BNodeSequence));
         }
 
         /// <summary>
@@ -84,6 +84,7 @@ namespace Editor.EditorRbtBehaviorTree
             var node = BNodeFactory.Instance.Create(type);
             selectedNode.AddNode(ref node);
             node.parent = selectedNode;
+            selectedNode = node;
             _view.Repaint();
         }
 
@@ -127,11 +128,102 @@ namespace Editor.EditorRbtBehaviorTree
                 return;
             }
 
-            selectedNode.parent?.RemoveNode(ref selectedNode);
-            selectedNode.parent = null;
+            //根节点
+            if (selectedNode.parent == null)
+            {
+                _model.rootNode = null;
+            }
+            //子节点
+            else
+            {
+                selectedNode.parent.RemoveNode(ref selectedNode);
+                selectedNode.parent = null;
+            }
+
             selectedNode = null;
-            targetNode = null;
             _view.Repaint();
+        }
+
+        /// <summary>
+        /// 拖动检测
+        /// </summary>
+        public void CheckNodeMouseUp(ref int x, ref int y, ref BNodeBase node)
+        {
+            var evt = Event.current;
+            if (evt.type != EventType.MouseUp) return;
+            //节点插入识别范围
+            var insertLineRect = new Rect(0, y, _view.position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH, 5);
+            //节点挂载识别范围
+            var nodeSelectableRect = new Rect(0, y, _view.position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH,
+                DefEditorBTreeUI.NODE_HEIGHT - 5);
+            //在插入识别范围内抬起
+            if (insertLineRect.Contains(evt.mousePosition))
+            {
+                OnMouseUpInsertLine();
+            }
+            //在节点挂载识别范围内抬起
+            else if (nodeSelectableRect.Contains(evt.mousePosition))
+            {
+                OnMouseUpNode();
+            }
+
+            isNodeInDragging = false;
+            _view.Repaint();
+        }
+
+        /// <summary>
+        /// 点击检测
+        /// </summary>
+        /// <param name="y"></param>
+        /// <param name="node"></param>
+        /// <param name="x"></param>
+        public void CheckNodeMouseDown(ref int x, ref int y, ref BNodeBase node)
+        {
+            var evt = Event.current;
+            if (evt.button != 0 || evt.type != EventType.MouseDown) return;
+            //节点选择范围
+            var nodeSelectableRect = new Rect(x, y, _view.position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH,
+                DefEditorBTreeUI.NODE_HEIGHT);
+            //不在当前节点范围内
+            if (!nodeSelectableRect.Contains(evt.mousePosition))
+            {
+                return;
+            }
+
+            OnMouseDownNode(ref node);
+            isNodeInDragging = true;
+            _view.Repaint();
+        }
+
+        /// <summary>
+        /// 按下节点回调
+        /// </summary>
+        /// <param name="node"></param>
+        private void OnMouseDownNode(ref BNodeBase node)
+        {
+            if (isNodeInDragging)
+            {
+                return;
+            }
+
+            selectedNode = node;
+            Debug.Log("节点按下");
+        }
+
+        /// <summary>
+        /// 鼠标在插入线抬起回调
+        /// </summary>
+        private void OnMouseUpInsertLine()
+        {
+            Debug.Log("插入线抬起");
+        }
+
+        /// <summary>
+        /// 鼠标在节点处抬起回调
+        /// </summary>
+        private void OnMouseUpNode()
+        {
+            Debug.Log("节点抬起");
         }
     }
 }

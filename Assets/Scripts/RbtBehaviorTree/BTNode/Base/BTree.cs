@@ -7,10 +7,9 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-using RbtBehaviorTree.BTData;
 using UnityEngine;
 
-namespace RbtBehaviorTree.BTNode.Base
+namespace SR.RbtBehaviorTree
 {
     public class BTree
     {

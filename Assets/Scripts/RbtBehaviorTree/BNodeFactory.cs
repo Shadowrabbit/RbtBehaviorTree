@@ -11,11 +11,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Base;
-using RbtBehaviorTree.BTNode.Base;
+using SR.Base;
 using UnityEngine;
 
-namespace RbtBehaviorTree
+namespace SR.RbtBehaviorTree
 {
     public class BNodeFactory : SingletonBase<BNodeFactory>
     {
@@ -68,6 +67,23 @@ namespace RbtBehaviorTree
         }
 
         /// <summary>
+        /// 获取组合节点的索引
+        /// </summary>
+        /// <returns></returns>
+        public int GetCompositeNodeIndex(Type type)
+        {
+            for (var i = 0; i < listCompositeTypes.Count; i++)
+            {
+                if (type == listCompositeTypes[i])
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        /// <summary>
         /// 反射获取子类的类型列表
         /// </summary>
         /// <param name="nodeType"></param>
@@ -80,11 +96,11 @@ namespace RbtBehaviorTree
             foreach (var name in listCsFileName)
             {
                 var className = name.Split('.')[0];
-                var classType = Type.GetType(className);
+                var classType = Type.GetType("SR.RbtBehaviorTree." + className);
                 //类型不存在 或者不是node的子类
                 if (classType == null || !classType.IsSubclassOf(nodeType)) continue;
                 listType.Add(classType);
-                Debug.Log(classType.Name);
+                //Debug.Log(classType.Name);
             }
 
             return listType;
@@ -108,10 +124,6 @@ namespace RbtBehaviorTree
             }
 
             return listFileName;
-        }
-
-        public void Test()
-        {
         }
     }
 }
