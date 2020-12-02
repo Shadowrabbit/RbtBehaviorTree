@@ -110,7 +110,7 @@ namespace SR.RbtBehaviorTree
             var pos1 = new Vector3(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH / 2, y + DefEditorBTreeUI.NODE_HEIGHT, 0);
             Handles.color = Color.magenta;
             //绘制子节点和线
-            foreach (var subNode in node.listChildNodes)
+            for (var i = 0; i < node.listChildNodes.Count; i++)
             {
                 y += DefEditorBTreeUI.NODE_HEIGHT;
                 //绘制子节点前方线
@@ -118,7 +118,7 @@ namespace SR.RbtBehaviorTree
                     y + DefEditorBTreeUI.NODE_HEIGHT / 2, 0);
                 var pos3 = new Vector3(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH,
                     y + DefEditorBTreeUI.NODE_HEIGHT / 2, 0);
-                DrawNode(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH, ref y, subNode);
+                DrawNode(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH, ref y, node.listChildNodes[i]);
                 Handles.DrawPolyLine(pos1, pos2, pos3);
             }
         }
@@ -181,48 +181,67 @@ namespace SR.RbtBehaviorTree
         /// </summary>
         private void DrawNodeBg(ref BNodeBase node, ref int y)
         {
+            //无论是否处于拖拽状态 当前节点被选中的话变蓝色
+            if (_controller.selectedNode == node)
+            {
+                //选中的节点
+                var texLineBlue = TexLineFactory.Instance.Create(Color.blue);
+                GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineBlue);
+            }
+
             //节点拖拽中
-            if (_controller.isNodeInDragging)
+            if (!_controller.isNodeInDragging) return;
+            var texLineGreen = TexLineFactory.Instance.Create(Color.green);
+            var texLineRed = TexLineFactory.Instance.Create(Color.red);
+            var evt = Event.current;
+            //节点插入识别范围
+            var insertLineRect = new Rect(0, y, position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH, 5);
+            //节点挂载识别范围
+            var nodeSelectableRect = new Rect(0, y, position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH,
+                DefEditorBTreeUI.NODE_HEIGHT - 5);
+            //在当前节点的插入识别范围    
+            if (insertLineRect.Contains(evt.mousePosition))
             {
-                var evt = Event.current;
-                //节点插入识别范围
-                var insertLineRect = new Rect(0, y, position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH, 5);
-                //节点挂载识别范围
-                var nodeSelectableRect = new Rect(0, y, position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH,
-                    DefEditorBTreeUI.NODE_HEIGHT - 5);
-                //在当前节点的插入识别范围
-                if (insertLineRect.Contains(evt.mousePosition))
+                //当前拖拽中的是根节点 红色警告
+                if (_controller.selectedNode?.parent == null)
                 {
-                    var texLineGreen = TexLineFactory.Instance.Create(Color.green);
-                    GUI.DrawTexture(new Rect(0, y, position.width, 2), texLineGreen);
+                    GUI.DrawTexture(new Rect(0, y, position.width, 2),
+                        texLineRed);
                 }
-                //在当前节点的挂载范围
-                else if (nodeSelectableRect.Contains(evt.mousePosition))
+                //无法插入在根节点前方
+                else if (node.parent == null)
                 {
-                    //动作节点与条件节点不能作为根节点
-                    if (node.GetType().IsSubclassOf(typeof(BNodeAction)) ||
-                        node.GetType().IsSubclassOf(typeof(BNodeCondition)))
-                    {
-                        var texLineRed = TexLineFactory.Instance.Create(Color.red);
-                        GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineRed);
-                        return;
-                    }
-
-                    var texLineGreen = TexLineFactory.Instance.Create(Color.green);
-                    GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineGreen);
+                    GUI.DrawTexture(new Rect(0, y, position.width, 2),
+                        texLineRed);
                 }
-
-                return;
+                //选中节点不是目标节点的根节点时允许操作
+                else
+                {
+                    GUI.DrawTexture(new Rect(0, y, position.width, 2),
+                        _controller.selectedNode?.IsChildNode(ref node) != true ? texLineGreen : texLineRed);
+                }
             }
-
-            //非选中节点
-            if (_controller.selectedNode != node)
+            //在当前节点的挂载范围
+            else if (nodeSelectableRect.Contains(evt.mousePosition))
             {
-                return;
+                //动作节点与条件节点不能作为挂载根节点
+                if (node.GetType().IsSubclassOf(typeof(BNodeAction)) ||
+                    node.GetType().IsSubclassOf(typeof(BNodeCondition)))
+                {
+                    GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineRed);
+                }
+                //当前拖拽中的是根节点 红色警告
+                else if (_controller.selectedNode?.parent == null)
+                {
+                    GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineRed);
+                }
+                //选中节点不是目标节点的根节点时允许操作
+                else
+                {
+                    GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT),
+                        _controller.selectedNode?.IsChildNode(ref node) != true ? texLineGreen : texLineRed);
+                }
             }
-
-            var texLineBlue = TexLineFactory.Instance.Create(Color.blue);
-            GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineBlue);
         }
 
         /// <summary>

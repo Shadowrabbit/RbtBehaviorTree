@@ -159,12 +159,12 @@ namespace SR.RbtBehaviorTree
             //在插入识别范围内抬起
             if (insertLineRect.Contains(evt.mousePosition))
             {
-                OnMouseUpInsertLine();
+                OnMouseUpInsertLine(ref node);
             }
             //在节点挂载识别范围内抬起
             else if (nodeSelectableRect.Contains(evt.mousePosition))
             {
-                OnMouseUpNode();
+                OnMouseUpNode(ref node);
             }
 
             isNodeInDragging = false;
@@ -207,23 +207,69 @@ namespace SR.RbtBehaviorTree
             }
 
             selectedNode = node;
-            Debug.Log("节点按下");
         }
 
         /// <summary>
         /// 鼠标在插入线抬起回调
         /// </summary>
-        private void OnMouseUpInsertLine()
+        private void OnMouseUpInsertLine(ref BNodeBase node)
         {
-            Debug.Log("插入线抬起");
+            //选中节点与目标节点相同
+            if (selectedNode == node)
+            {
+                return;
+            }
+
+            //禁止拖拽移动根节点
+            if (selectedNode?.parent == null)
+            {
+                return;
+            }
+
+            //无法插入到根节点前方
+            if (node.parent == null)
+            {
+                return;
+            }
+
+            //目标节点是选中节点的子节点 无法挂载
+            if (selectedNode.IsChildNode(ref node))
+            {
+                return;
+            }
+
+            selectedNode.parent.RemoveNode(ref selectedNode);
+            selectedNode.parent = node.parent;
+            node.parent.InsertNode(node, ref selectedNode);
+            _view.Repaint();
         }
 
         /// <summary>
         /// 鼠标在节点处抬起回调
         /// </summary>
-        private void OnMouseUpNode()
+        private void OnMouseUpNode(ref BNodeBase node)
         {
-            Debug.Log("节点抬起");
+            if (selectedNode == node)
+            {
+                return;
+            }
+
+            //禁止拖拽移动根节点
+            if (selectedNode?.parent == null)
+            {
+                return;
+            }
+
+            //目标节点是选中节点的子节点 无法挂载
+            if (selectedNode.IsChildNode(ref node))
+            {
+                return;
+            }
+
+            selectedNode.parent.RemoveNode(ref selectedNode);
+            selectedNode.parent = node;
+            node.AddNode(ref selectedNode);
+            _view.Repaint();
         }
     }
 }

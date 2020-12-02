@@ -25,72 +25,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd9fbbb-a2bb-4cc3-896c-710f8fb4f7bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/TexLineFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/TexLineFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/09/09520d5268384d9ea4e19b55d2917ae8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/09/09520d5268384d9ea4e19b55d2917ae8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/1e/1e8f9b69f4e94cc7a3373dba988995f3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1e/1e8f9b69f4e94cc7a3373dba988995f3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/65/65858c5c75443194c9d637708ff8eadc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/65/65858c5c75443194c9d637708ff8eadc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/65/65858c5c75443194c9d637708ff8eadc.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/65/65858c5c75443194c9d637708ff8eadc.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a5749e321ec4f87a5e458ed8340c5f1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a5749e321ec4f87a5e458ed8340c5f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a5749e321ec4f87a5e458ed8340c5f1.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a5749e321ec4f87a5e458ed8340c5f1.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a6f7b98a2e79c248ab42654ac6a0149" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a6f7b98a2e79c248ab42654ac6a0149" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a6f7b98a2e79c248ab42654ac6a0149.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a6f7b98a2e79c248ab42654ac6a0149.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/7e/7e86dcdb833a45eaa31b3d2c4d29aa40" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/7e/7e86dcdb833a45eaa31b3d2c4d29aa40" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/7e/7e86dcdb833a45eaa31b3d2c4d29aa40.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/7e/7e86dcdb833a45eaa31b3d2c4d29aa40.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/cc/cc5df4786a6444e08ebb2a277fc44a85" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cc/cc5df4786a6444e08ebb2a277fc44a85" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/cc/cc5df4786a6444e08ebb2a277fc44a85.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cc/cc5df4786a6444e08ebb2a277fc44a85.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d9/d9cf46f661214037ac342b183e32c8f0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d9/d9cf46f661214037ac342b183e32c8f0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d9/d9cf46f661214037ac342b183e32c8f0.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d9/d9cf46f661214037ac342b183e32c8f0.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f5/f57258a55c2e6f84884f0f8e7bf76ec8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f5/f57258a55c2e6f84884f0f8e7bf76ec8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f5/f57258a55c2e6f84884f0f8e7bf76ec8.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f5/f57258a55c2e6f84884f0f8e7bf76ec8.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +81,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" />
@@ -143,8 +90,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" />
       </list>
     </option>
@@ -173,10 +121,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4764">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4764" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -196,6 +144,8 @@
       <workItem from="1606699256609" duration="2340000" />
       <workItem from="1606712127522" duration="22814000" />
       <workItem from="1606790532637" duration="26652000" />
+      <workItem from="1606878518434" duration="5493000" />
+      <workItem from="1606885836136" duration="3125000" />
     </task>
     <servers />
   </component>

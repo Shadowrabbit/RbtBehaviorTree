@@ -122,5 +122,24 @@ namespace SR.RbtBehaviorTree
             var index = listChildNodes.FindIndex((node) => node == targetNode);
             listChildNodes[index] = bNode;
         }
+
+        /// <summary>
+        /// 是子节点?
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        public bool IsChildNode(ref BNodeBase node)
+        {
+            for (var i = 0; i < listChildNodes.Count; i++)
+            {
+                var isChildNode = listChildNodes[i].IsChildNode(ref node);
+                if (isChildNode)
+                {
+                    return true;
+                }
+            }
+
+            return this == node;
+        }
     }
 }
