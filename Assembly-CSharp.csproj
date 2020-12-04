@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\3rd\LitJson\JsonWriter.cs" />
     <Compile Include="Assets\Scripts\3rd\LitJson\Lexer.cs" />
     <Compile Include="Assets\Scripts\3rd\LitJson\ParserToken.cs" />
+    <Compile Include="Assets\Scripts\Base\IJson.cs" />
     <Compile Include="Assets\Scripts\Base\SingletonBase.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BNodeFactory.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTData\BDataBase.cs" />

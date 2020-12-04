@@ -8,18 +8,39 @@
 // ******************************************************************
 
 using System;
+using System.IO;
+using _3rd.LitJson;
+using UnityEditor;
 using UnityEngine;
 
 namespace SR.RbtBehaviorTree
 {
     public class BTreeMainWindowController
     {
-        public BTree Model => _model;
-        public int rootNodeTypeIndex = -1; //根节点类型索引
-        public BNodeBase selectedNode; //选中的节点
-        public bool isNodeInDragging; //正在移动节点
-        private readonly BTreeMainWindow _view; //视图
         private BTree _model; //数据模型
+        private int _rootNodeTypeIndex = -1; //根节点类型索引
+        private BNodeBase _selectedNode; //选中的节点
+        private bool _isNodeInDragging; //正在移动节点
+        private readonly BTreeMainWindow _view; //视图
+        public BTree Model => _model;
+
+        public int RootNodeTypeIndex
+        {
+            get => _rootNodeTypeIndex;
+            set => _rootNodeTypeIndex = value;
+        }
+
+        public BNodeBase SelectedNode
+        {
+            get => _selectedNode;
+            set => _selectedNode = value;
+        }
+
+        public bool IsNodeInDragging
+        {
+            get => _isNodeInDragging;
+            set => _isNodeInDragging = value;
+        }
 
         /// <summary>
         /// 构造器
@@ -36,6 +57,17 @@ namespace SR.RbtBehaviorTree
         /// </summary>
         public void Save()
         {
+            if (_model == null)
+            {
+                return;
+            }
+
+            //文件储存路径
+            var savePath = EditorUtility.SaveFilePanel(DefEditorBTreeUI.SAVE_TREE,
+                Application.dataPath, DefEditorBTreeUI.DEFAULT_TREE_NAME, "json");
+            var strJson = _model.WriteJson().ToJson();
+            File.WriteAllText(savePath, strJson);
+            Debug.Log("保存成功" + savePath);
         }
 
         /// <summary>
@@ -43,6 +75,18 @@ namespace SR.RbtBehaviorTree
         /// </summary>
         public void Load()
         {
+            var loadPath = EditorUtility.OpenFilePanel(DefEditorBTreeUI.LOAD_TREE,
+                Application.dataPath, "json");
+            if (loadPath == "") return;
+            var strJson = File.ReadAllText(loadPath);
+            var jsonData = JsonMapper.ToObject(strJson);
+            if (_model == null)
+            {
+                _model = new BTree();
+            }
+
+            _model.ReadJson(jsonData);
+            _view.Repaint();
         }
 
         /// <summary>
@@ -56,7 +100,21 @@ namespace SR.RbtBehaviorTree
                 return;
             }
 
-            _model.rootNode.listChildNodes = null;
+            //根节点不存在
+            if (_model.rootNode == null)
+            {
+                Debug.LogError("根节点不存在!");
+                return;
+            }
+
+            //删除根节点下的所有子节点 注意list要倒着遍历删除
+            for (var i = _model.rootNode.ListChildNodes.Count - 1; i >= 0; i--)
+            {
+                _model.RemoveNode(_model.rootNode.ListChildNodes[i]);
+            }
+
+            _selectedNode = null;
+            _view.Repaint();
         }
 
         /// <summary>
@@ -66,7 +124,8 @@ namespace SR.RbtBehaviorTree
         {
             var rootNode = BNodeFactory.Instance.Create(typeof(BNodeSequence));
             _model = new BTree {name = "New Tree", rootNode = rootNode};
-            rootNodeTypeIndex = BNodeFactory.Instance.GetCompositeNodeIndex(typeof(BNodeSequence));
+            _rootNodeTypeIndex = BNodeFactory.Instance.GetCompositeNodeIndex(typeof(BNodeSequence));
+            _view.Repaint();
         }
 
         /// <summary>
@@ -75,16 +134,19 @@ namespace SR.RbtBehaviorTree
         /// <param name="arg"></param>
         public void AddNode(object arg)
         {
-            if (selectedNode == null)
+            if (_selectedNode == null)
             {
                 return;
             }
 
             var type = arg as Type;
+            //根据类型创建新节点
             var node = BNodeFactory.Instance.Create(type);
-            selectedNode.AddNode(ref node);
-            node.parent = selectedNode;
-            selectedNode = node;
+            //将新节点挂载到选中的节点
+            _selectedNode.AddNode(node);
+            node.Parent = _selectedNode;
+            //挂载结束 更换选中节点
+            _selectedNode = node;
             _view.Repaint();
         }
 
@@ -94,26 +156,26 @@ namespace SR.RbtBehaviorTree
         /// <param name="arg"></param>
         public void ReplaceNode(object arg)
         {
-            if (selectedNode == null)
+            if (_selectedNode == null)
             {
                 return;
             }
 
             var type = arg as Type;
             var node = BNodeFactory.Instance.Create(type);
-            node.parent = selectedNode.parent;
-            node.listChildNodes = selectedNode.listChildNodes;
+            node.Parent = _selectedNode.Parent;
+            node.ListChildNodes = _selectedNode.ListChildNodes;
             //更新父节点信息
-            if (node.parent != null)
+            if (node.Parent != null)
             {
-                node.parent.ReplaceNode(selectedNode, ref node);
+                node.Parent.ReplaceNode(_selectedNode, node);
             }
             else
             {
                 _model.rootNode = node;
             }
 
-            selectedNode = node;
+            _selectedNode = node;
             _view.Repaint();
         }
 
@@ -123,34 +185,24 @@ namespace SR.RbtBehaviorTree
         /// <param name="arg"></param>
         public void RemoveNode(object arg)
         {
-            if (selectedNode == null)
+            if (_selectedNode == null)
             {
                 return;
             }
 
-            //根节点
-            if (selectedNode.parent == null)
-            {
-                _model.rootNode = null;
-            }
-            //子节点
-            else
-            {
-                selectedNode.parent.RemoveNode(ref selectedNode);
-                selectedNode.parent = null;
-            }
-
-            selectedNode = null;
+            //从书中移除选中节点
+            _model.RemoveNode(_selectedNode);
+            _selectedNode = null;
             _view.Repaint();
         }
 
         /// <summary>
         /// 拖动检测
         /// </summary>
-        public void CheckNodeMouseUp(ref int x, ref int y, ref BNodeBase node)
+        public void CheckNodeMouseUp(ref int x, ref int y, BNodeBase node)
         {
             var evt = Event.current;
-            if (evt.type != EventType.MouseUp) return;
+            if (evt.button != 0 || evt.type != EventType.MouseUp) return;
             //节点插入识别范围
             var insertLineRect = new Rect(0, y, _view.position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH, 5);
             //节点挂载识别范围
@@ -159,15 +211,15 @@ namespace SR.RbtBehaviorTree
             //在插入识别范围内抬起
             if (insertLineRect.Contains(evt.mousePosition))
             {
-                OnMouseUpInsertLine(ref node);
+                OnMouseUpInsertLine(node);
             }
             //在节点挂载识别范围内抬起
             else if (nodeSelectableRect.Contains(evt.mousePosition))
             {
-                OnMouseUpNode(ref node);
+                OnMouseUpNode(node);
             }
 
-            isNodeInDragging = false;
+            _isNodeInDragging = false;
             _view.Repaint();
         }
 
@@ -177,9 +229,10 @@ namespace SR.RbtBehaviorTree
         /// <param name="y"></param>
         /// <param name="node"></param>
         /// <param name="x"></param>
-        public void CheckNodeMouseDown(ref int x, ref int y, ref BNodeBase node)
+        public void CheckNodeMouseDown(ref int x, ref int y, BNodeBase node)
         {
             var evt = Event.current;
+            //button=0是左键点击
             if (evt.button != 0 || evt.type != EventType.MouseDown) return;
             //节点选择范围
             var nodeSelectableRect = new Rect(x, y, _view.position.width - DefEditorBTreeUI.MAIN_MENU_LAYOUT_WIDTH,
@@ -190,8 +243,8 @@ namespace SR.RbtBehaviorTree
                 return;
             }
 
-            OnMouseDownNode(ref node);
-            isNodeInDragging = true;
+            OnMouseDownNode(node);
+            _isNodeInDragging = true;
             _view.Repaint();
         }
 
@@ -199,76 +252,76 @@ namespace SR.RbtBehaviorTree
         /// 按下节点回调
         /// </summary>
         /// <param name="node"></param>
-        private void OnMouseDownNode(ref BNodeBase node)
+        private void OnMouseDownNode(BNodeBase node)
         {
-            if (isNodeInDragging)
+            if (_isNodeInDragging)
             {
                 return;
             }
 
-            selectedNode = node;
+            _selectedNode = node;
         }
 
         /// <summary>
         /// 鼠标在插入线抬起回调
         /// </summary>
-        private void OnMouseUpInsertLine(ref BNodeBase node)
+        private void OnMouseUpInsertLine(BNodeBase node)
         {
             //选中节点与目标节点相同
-            if (selectedNode == node)
+            if (_selectedNode == node)
             {
                 return;
             }
 
             //禁止拖拽移动根节点
-            if (selectedNode?.parent == null)
+            if (_selectedNode?.Parent == null)
             {
                 return;
             }
 
             //无法插入到根节点前方
-            if (node.parent == null)
+            if (node.Parent == null)
             {
                 return;
             }
 
             //目标节点是选中节点的子节点 无法挂载
-            if (selectedNode.IsChildNode(ref node))
+            if (_selectedNode.IsChildNode(node))
             {
                 return;
             }
 
-            selectedNode.parent.RemoveNode(ref selectedNode);
-            selectedNode.parent = node.parent;
-            node.parent.InsertNode(node, ref selectedNode);
+            _selectedNode.Parent.RemoveNode(_selectedNode);
+            _selectedNode.Parent = node.Parent;
+            node.Parent.InsertNode(node, _selectedNode);
             _view.Repaint();
         }
 
         /// <summary>
         /// 鼠标在节点处抬起回调
         /// </summary>
-        private void OnMouseUpNode(ref BNodeBase node)
+        private void OnMouseUpNode(BNodeBase node)
         {
-            if (selectedNode == node)
+            if (_selectedNode == node)
             {
                 return;
             }
 
             //禁止拖拽移动根节点
-            if (selectedNode?.parent == null)
+            if (_selectedNode?.Parent == null)
             {
                 return;
             }
 
             //目标节点是选中节点的子节点 无法挂载
-            if (selectedNode.IsChildNode(ref node))
+            if (_selectedNode.IsChildNode(node))
             {
                 return;
             }
 
-            selectedNode.parent.RemoveNode(ref selectedNode);
-            selectedNode.parent = node;
-            node.AddNode(ref selectedNode);
+            _selectedNode.Parent.RemoveNode(_selectedNode);
+            _selectedNode.Parent = node;
+            node.AddNode(_selectedNode);
             _view.Repaint();
         }
     }

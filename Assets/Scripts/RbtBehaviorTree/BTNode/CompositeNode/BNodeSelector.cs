@@ -17,9 +17,9 @@ namespace SR.RbtBehaviorTree
         /// 进入时回调
         /// </summary>
         /// <param name="bData"></param>
-        protected override void OnEnter(ref BDataBase bData)
+        protected override void OnEnter(BDataBase bData)
         {
-            base.OnEnter(ref bData);
+            base.OnEnter(bData);
             _failedNodeCount = 0;
         }
 
@@ -28,18 +28,18 @@ namespace SR.RbtBehaviorTree
         /// </summary>
         /// <param name="bData"></param>
         /// <returns></returns>
-        protected override ActionResult OnRunning(ref BDataBase bData)
+        protected override ActionResult OnRunning(BDataBase bData)
         {
             //全部子节点失败 
-            if (_failedNodeCount >= listChildNodes.Count)
+            if (_failedNodeCount >= _listChildNodes.Count)
             {
                 return ActionResult.Failure;
             }
 
             //当前队列中正在运行的节点
-            var node = listChildNodes[_failedNodeCount];
+            var node = _listChildNodes[_failedNodeCount];
             //执行该节点动作
-            var actionResult = node.UpdateNode(ref bData);
+            var actionResult = node.UpdateNode(bData);
             //某个节点成功则选择节点成功
             if (actionResult == ActionResult.Success)
             {

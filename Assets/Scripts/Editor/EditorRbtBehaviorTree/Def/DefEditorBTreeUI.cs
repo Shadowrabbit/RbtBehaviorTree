@@ -24,6 +24,9 @@ namespace SR.RbtBehaviorTree
         public static string LOAD = "Load Tree";
         public static string CREATE = "Create Tree";
         public static string CLEAR = "Clear All Nodes";
+        public static string SAVE_TREE = "Save Tree";
+        public static string LOAD_TREE = "Load Tree";
+        public static string DEFAULT_TREE_NAME = "defaultTree";
 
         public static GUIContent CONTENT_TITLE_MAIN = new GUIContent("BTreeMainWindow"); //主页面标题
     }

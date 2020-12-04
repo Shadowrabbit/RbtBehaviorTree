@@ -22,6 +22,7 @@
             </e>
           </e>
           <e p="Base" t="Include">
+            <e p="IJson.cs" t="Include" />
             <e p="SingletonBase.cs" t="Include" />
           </e>
           <e p="Editor" t="Include">

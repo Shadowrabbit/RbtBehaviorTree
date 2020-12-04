@@ -1,9 +1,9 @@
 ﻿// ******************************************************************
 //       /\ /|       @file       BNodeType.cs
-//       \ V/        @brief      行为树节点类型
+//       \ V/        @brief      节点类型
 //       | "")       @author     Shadowrabbit, yingtu0401@gmail.com
 //       /  |                    
-//      /  \\        @Modified   2020-11-29 18:21:01
+//      /  \\        @Modified   2020-12-04 13:20:37
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
@@ -15,6 +15,6 @@ namespace SR.RbtBehaviorTree
         Composite = 1, //组合
         Decorator = 2, //装饰
         Condition = 3, //条件
-        Action = 4, //动作
+        Action = 4 //动作
     }
 }

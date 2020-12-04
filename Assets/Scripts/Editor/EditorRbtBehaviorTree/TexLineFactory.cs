@@ -7,7 +7,6 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
-using SR.Base;
 using UnityEngine;
 
 namespace SR.RbtBehaviorTree

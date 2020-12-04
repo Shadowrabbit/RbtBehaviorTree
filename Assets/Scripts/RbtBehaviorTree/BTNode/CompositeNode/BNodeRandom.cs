@@ -15,16 +15,16 @@ namespace SR.RbtBehaviorTree
     {
         private int _runningIndex = 0; //正在运行中的子节点索引
 
-        protected override void OnEnter(ref BDataBase bData)
+        protected override void OnEnter(BDataBase bData)
         {
-            base.OnEnter(ref bData);
+            base.OnEnter(bData);
             //随机选个子节点
-            _runningIndex = Random.Range(0, this.listChildNodes.Count);
+            _runningIndex = Random.Range(0, _listChildNodes.Count);
         }
 
-        protected override ActionResult OnRunning(ref BDataBase bData)
+        protected override ActionResult OnRunning(BDataBase bData)
         {
-            return listChildNodes[_runningIndex].UpdateNode(ref bData);
+            return _listChildNodes[_runningIndex].UpdateNode(bData);
         }
     }
 }

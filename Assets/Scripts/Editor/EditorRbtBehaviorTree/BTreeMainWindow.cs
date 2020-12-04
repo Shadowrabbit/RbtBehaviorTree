@@ -39,7 +39,7 @@ namespace SR.RbtBehaviorTree
         private void Update()
         {
             //拖拽中每帧刷新
-            if (_controller.isNodeInDragging)
+            if (_controller.IsNodeInDragging)
             {
                 Repaint();
             }
@@ -102,15 +102,15 @@ namespace SR.RbtBehaviorTree
         /// </summary>
         private void DrawNode(int x, ref int y, BNodeBase node)
         {
-            DrawNodeBg(ref node, ref y); //节点bg
+            DrawNodeBg(node, ref y); //节点bg
             GUI.Label(new Rect(x, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), node.GetType().Name);
-            DrawSubMenu(ref x, ref y, ref node); //绘制节点处子菜单
-            _controller.CheckNodeMouseDown(ref x, ref y, ref node);
-            _controller.CheckNodeMouseUp(ref x, ref y, ref node);
+            DrawSubMenu(ref x, ref y, node); //绘制节点处子菜单
+            _controller.CheckNodeMouseDown(ref x, ref y, node);
+            _controller.CheckNodeMouseUp(ref x, ref y, node);
             var pos1 = new Vector3(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH / 2, y + DefEditorBTreeUI.NODE_HEIGHT, 0);
             Handles.color = Color.magenta;
             //绘制子节点和线
-            for (var i = 0; i < node.listChildNodes.Count; i++)
+            for (var i = 0; i < node.ListChildNodes.Count; i++)
             {
                 y += DefEditorBTreeUI.NODE_HEIGHT;
                 //绘制子节点前方线
@@ -118,7 +118,7 @@ namespace SR.RbtBehaviorTree
                     y + DefEditorBTreeUI.NODE_HEIGHT / 2, 0);
                 var pos3 = new Vector3(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH,
                     y + DefEditorBTreeUI.NODE_HEIGHT / 2, 0);
-                DrawNode(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH, ref y, node.listChildNodes[i]);
+                DrawNode(x + DefEditorBTreeUI.NODE_POLY_LINE_WIDTH, ref y, node.ListChildNodes[i]);
                 Handles.DrawPolyLine(pos1, pos2, pos3);
             }
         }
@@ -126,10 +126,10 @@ namespace SR.RbtBehaviorTree
         /// <summary>
         /// 绘制子菜单
         /// </summary>
-        private void DrawSubMenu(ref int x, ref int y, ref BNodeBase node)
+        private void DrawSubMenu(ref int x, ref int y, BNodeBase node)
         {
             //正在移动节点
-            if (_controller.isNodeInDragging)
+            if (_controller.IsNodeInDragging)
             {
                 return;
             }
@@ -146,7 +146,7 @@ namespace SR.RbtBehaviorTree
 
             //没有右键点击
             if (evt.type != EventType.ContextClick) return;
-            _controller.selectedNode = node;
+            _controller.SelectedNode = node;
             var menu = new GenericMenu();
             foreach (var item in BNodeFactory.Instance.listCompositeTypes)
             {
@@ -179,10 +179,10 @@ namespace SR.RbtBehaviorTree
         /// <summary>
         /// 绘制节点背景
         /// </summary>
-        private void DrawNodeBg(ref BNodeBase node, ref int y)
+        private void DrawNodeBg(BNodeBase node, ref int y)
         {
             //无论是否处于拖拽状态 当前节点被选中的话变蓝色
-            if (_controller.selectedNode == node)
+            if (_controller.SelectedNode == node)
             {
                 //选中的节点
                 var texLineBlue = TexLineFactory.Instance.Create(Color.blue);
@@ -190,7 +190,7 @@ namespace SR.RbtBehaviorTree
             }
 
             //节点拖拽中
-            if (!_controller.isNodeInDragging) return;
+            if (!_controller.IsNodeInDragging) return;
             var texLineGreen = TexLineFactory.Instance.Create(Color.green);
             var texLineRed = TexLineFactory.Instance.Create(Color.red);
             var evt = Event.current;
@@ -203,13 +203,13 @@ namespace SR.RbtBehaviorTree
             if (insertLineRect.Contains(evt.mousePosition))
             {
                 //当前拖拽中的是根节点 红色警告
-                if (_controller.selectedNode?.parent == null)
+                if (_controller.SelectedNode?.Parent == null)
                 {
                     GUI.DrawTexture(new Rect(0, y, position.width, 2),
                         texLineRed);
                 }
                 //无法插入在根节点前方
-                else if (node.parent == null)
+                else if (node.Parent == null)
                 {
                     GUI.DrawTexture(new Rect(0, y, position.width, 2),
                         texLineRed);
@@ -218,7 +218,7 @@ namespace SR.RbtBehaviorTree
                 else
                 {
                     GUI.DrawTexture(new Rect(0, y, position.width, 2),
-                        _controller.selectedNode?.IsChildNode(ref node) != true ? texLineGreen : texLineRed);
+                        _controller.SelectedNode?.IsChildNode(node) != true ? texLineGreen : texLineRed);
                 }
             }
             //在当前节点的挂载范围
@@ -231,7 +231,7 @@ namespace SR.RbtBehaviorTree
                     GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineRed);
                 }
                 //当前拖拽中的是根节点 红色警告
-                else if (_controller.selectedNode?.parent == null)
+                else if (_controller.SelectedNode?.Parent == null)
                 {
                     GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT), texLineRed);
                 }
@@ -239,7 +239,7 @@ namespace SR.RbtBehaviorTree
                 else
                 {
                     GUI.DrawTexture(new Rect(0, y, position.width, DefEditorBTreeUI.NODE_HEIGHT),
-                        _controller.selectedNode?.IsChildNode(ref node) != true ? texLineGreen : texLineRed);
+                        _controller.SelectedNode?.IsChildNode(node) != true ? texLineGreen : texLineRed);
                 }
             }
         }
@@ -314,17 +314,17 @@ namespace SR.RbtBehaviorTree
                     new Rect(x, y, DefEditorBTreeUI.TITLE_WIDTH,
                         DefEditorBTreeUI.NODE_HEIGHT),
                     "RootType: ");
-                var cacheRootNodeTypeIndex = _controller.rootNodeTypeIndex;
-                _controller.rootNodeTypeIndex = EditorGUI.Popup(
+                var cacheRootNodeTypeIndex = _controller.RootNodeTypeIndex;
+                _controller.RootNodeTypeIndex = EditorGUI.Popup(
                     new Rect(x + DefEditorBTreeUI.TITLE_WIDTH, y, DefEditorBTreeUI.POPUP_WIDTH,
                         DefEditorBTreeUI.BUTTON_HEIGHT),
-                    _controller.rootNodeTypeIndex,
+                    _controller.RootNodeTypeIndex,
                     BNodeFactory.Instance.GetCompositeNodeNameList().ToArray());
                 //树的根节点类型更变
-                if (cacheRootNodeTypeIndex != _controller.rootNodeTypeIndex)
+                if (cacheRootNodeTypeIndex != _controller.RootNodeTypeIndex)
                 {
                     var newRootNode =
-                        BNodeFactory.Instance.CreateRootNode(_controller.rootNodeTypeIndex);
+                        BNodeFactory.Instance.CreateRootNode(_controller.RootNodeTypeIndex);
                     _controller.Model.ReplaceRootNode(newRootNode);
                 }
 
@@ -335,16 +335,16 @@ namespace SR.RbtBehaviorTree
                 "=======================");
             y += DefEditorBTreeUI.NODE_HEIGHT;
             //存在选中节点
-            if (_controller.selectedNode != null)
+            if (_controller.SelectedNode != null)
             {
                 GUI.Label(new Rect(x, y, DefEditorBTreeUI.BUTTON_WIDTH, DefEditorBTreeUI.NODE_HEIGHT),
-                    "Node Type: " + _controller.selectedNode.NodeType);
+                    "Node Type: " + _controller.SelectedNode.NodeType);
                 y += DefEditorBTreeUI.NODE_HEIGHT;
                 GUI.Label(new Rect(x, y, DefEditorBTreeUI.BUTTON_WIDTH, DefEditorBTreeUI.NODE_HEIGHT),
-                    "Node Name: " + _controller.selectedNode.GetType().Name);
+                    "Class Type: " + _controller.SelectedNode.GetType().Name);
                 y += DefEditorBTreeUI.NODE_HEIGHT;
                 //子类附加属性
-                DrawNodeAdditionalProperty(_controller.selectedNode, x, ref y);
+                DrawNodeAdditionalProperty(_controller.SelectedNode, x, ref y);
             }
 
             GUI.Label(new Rect(x, y, DefEditorBTreeUI.BUTTON_WIDTH, DefEditorBTreeUI.NODE_HEIGHT),
