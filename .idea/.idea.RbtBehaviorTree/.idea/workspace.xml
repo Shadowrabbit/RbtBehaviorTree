@@ -24,46 +24,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd9fbbb-a2bb-4cc3-896c-710f8fb4f7bb" name="Default Changelist" comment="">
+    <list default="true" id="5bd9fbbb-a2bb-4cc3-896c-710f8fb4f7bb" name="Default Changelist" comment="完善其他节点">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/defaultTree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/defaultTree.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/e62b6d-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/e62b6d-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/92/92ea26bfa1fe3f24b86a8092e594cb46" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/92/92ea26bfa1fe3f24b86a8092e594cb46.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,27 +109,28 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeLoop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BnodeIdie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/ActionResult.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeRestore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeEscape.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeIdle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeDie.cs" />
         <option value="$PROJECT_DIR$/Assets/testAI.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeAlwaysTrue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeAlwaysFalse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeReverse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodePoisoning.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ConditionNode/BNodeIsHpLessThan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/TestAI.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeAlwaysFalse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeAlwaysTrue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeReverse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ConditionNode/BNodeIsHpLessThan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ConditionNode/BNodeIsHpMoreThan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestEntity.cs" />
       </list>
     </option>
   </component>
@@ -171,26 +148,6 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="threadsIsVisibleKey" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="allowRunningInParallel" value="false" />
-      <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
-      <option name="selectedOptions">
-        <set />
-      </option>
-      <method v="2" />
-    </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4312">
-      <option name="allowRunningInParallel" value="false" />
-      <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4312" />
-      <option name="selectedOptions">
-        <set />
-      </option>
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -213,7 +170,17 @@
       <workItem from="1607136493248" duration="22040000" />
       <workItem from="1607163052865" duration="5278000" />
       <workItem from="1607170100752" duration="342000" />
+      <workItem from="1607170645310" duration="282000" />
+      <workItem from="1607171088308" duration="3927000" />
     </task>
+    <task id="LOCAL-00001" summary="完善其他节点">
+      <created>1607170798899</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607170798899</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,12 +202,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="完善其他节点" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善其他节点" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" width="1092" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607170412814">
+    <state x="275" y="8" key="#Plugins" timestamp="1607172167726">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="137" y="20" width="1092" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1607170412814" />
+    <state x="275" y="8" key="#Plugins/0.0.1366.738@0.0.1366.738" timestamp="1607172167726" />
+    <state x="137" y="0" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607171257984">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="0" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1607171257984" />
     <state width="518" height="436" key="DebuggerActiveHint" timestamp="1607167429425">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -321,6 +294,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="VCS.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1607055879313" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1607170848733">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1607170848733" />
     <state x="0" y="0" width="690" height="544" key="dock-window-1" timestamp="1607167639828">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -335,36 +312,6 @@
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1607141445630" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs</url>
-          <line>80</line>
-          <properties documentPath="D:\gitRepository\RbtBehaviorTree\Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeBase.cs" initialLine="80">
-            <startOffsets>
-              <option value="2251" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2268" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs</url>
-          <line>85</line>
-          <properties documentPath="D:\gitRepository\RbtBehaviorTree\Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeBase.cs" initialLine="85">
-            <startOffsets>
-              <option value="2453" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2467" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#Base.SingletonBase`1.get_Instance" memberName="Instance" />

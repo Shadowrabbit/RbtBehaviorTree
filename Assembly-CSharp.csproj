@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeSelector.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeSequence.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ConditionNode\BNodeIsHpLessThan.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ConditionNode\BNodeIsHpMoreThan.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\DecoratorNode\BNodeAlwaysFalse.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\DecoratorNode\BNodeAlwaysTrue.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\DecoratorNode\BNodeReverse.cs" />

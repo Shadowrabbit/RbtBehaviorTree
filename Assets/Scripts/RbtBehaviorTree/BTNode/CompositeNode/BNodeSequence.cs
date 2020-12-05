@@ -7,6 +7,8 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
+using UnityEngine;
+
 namespace SR.RbtBehaviorTree
 {
     public class BNodeSequence : BNodeComposite

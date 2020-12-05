@@ -44,7 +44,7 @@ namespace SR.RbtBehaviorTree
             //某个节点成功则选择节点成功
             if (actionResult == ActionResult.Success)
             {
-                _actionResult = node.ActionResult;
+                _actionResult = ActionResult.Success;
                 return;
             }
 

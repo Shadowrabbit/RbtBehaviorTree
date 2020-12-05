@@ -66,6 +66,7 @@
               </e>
               <e p="ConditionNode" t="Include">
                 <e p="BNodeIsHpLessThan.cs" t="Include" />
+                <e p="BNodeIsHpMoreThan.cs" t="Include" />
               </e>
               <e p="DecoratorNode" t="Include">
                 <e p="BNodeAlwaysFalse.cs" t="Include" />
