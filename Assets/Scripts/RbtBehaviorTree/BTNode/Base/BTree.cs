@@ -92,9 +92,9 @@ namespace SR.RbtBehaviorTree
         /// 更新
         /// </summary>
         /// <param name="bData"></param>
-        public void Update(ref BDataBase bData)
+        public void Update(BDataBase bData)
         {
-            rootNode.UpdateNode(bData);
+            rootNode?.UpdateNode(bData);
         }
 
         /// <summary>

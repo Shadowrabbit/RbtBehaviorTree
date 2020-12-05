@@ -28,12 +28,13 @@ namespace SR.RbtBehaviorTree
         /// </summary>
         /// <param name="bData"></param>
         /// <returns></returns>
-        protected override ActionResult OnRunning(BDataBase bData)
+        protected override void OnRunning(BDataBase bData)
         {
             //完成了队列中的全部节点
             if (_finishedNodeCount >= _listChildNodes.Count)
             {
-                return ActionResult.Success;
+                _actionResult = ActionResult.Success;
+                return;
             }
 
             //当前队列中正在运行的节点
@@ -43,7 +44,8 @@ namespace SR.RbtBehaviorTree
             //某个节点失败则本队列失败
             if (actionResult == ActionResult.Failure)
             {
-                return actionResult;
+                _actionResult = ActionResult.Failure;
+                return;
             }
 
             //某个节点成功 index++
@@ -52,7 +54,7 @@ namespace SR.RbtBehaviorTree
                 _finishedNodeCount++;
             }
 
-            return ActionResult.Running;
+            _actionResult = ActionResult.Running;
         }
     }
 }

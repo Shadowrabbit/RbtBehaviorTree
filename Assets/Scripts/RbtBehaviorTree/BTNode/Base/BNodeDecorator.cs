@@ -7,10 +7,21 @@
 //    *(__\_\        @Copyright  Copyright (c) 2020, Shadowrabbit
 // ******************************************************************
 
+using UnityEngine;
+
 namespace SR.RbtBehaviorTree
 {
     public class BNodeDecorator : BNodeBase
     {
         public override BNodeType NodeType => BNodeType.Decorator;
+
+        protected override void OnEnter(BDataBase bData)
+        {
+            base.OnEnter(bData);
+            if (_listChildNodes.Count != 1)
+            {
+                Debug.LogError("装饰节点必须拥有并且只有1个子节点");
+            }
+        }
     }
 }

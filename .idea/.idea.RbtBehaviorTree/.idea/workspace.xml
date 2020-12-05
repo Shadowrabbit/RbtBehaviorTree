@@ -29,40 +29,40 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RbtBehaviorTree/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/TexLineFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/TexLineFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/defaultTree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/defaultTree.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/ce6461-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/09/09520d5268384d9ea4e19b55d2917ae8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/09/09520d5268384d9ea4e19b55d2917ae8.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/1e/1e8f9b69f4e94cc7a3373dba988995f3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1e/1e8f9b69f4e94cc7a3373dba988995f3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/43/431ab56e0d64a1441b78ddd25df2b892" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a5749e321ec4f87a5e458ed8340c5f1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a5749e321ec4f87a5e458ed8340c5f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/7e/7e86dcdb833a45eaa31b3d2c4d29aa40" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/7e/7e86dcdb833a45eaa31b3d2c4d29aa40" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a42084c754f4753aea385c9077e6ad2.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/86/8625e1293ace4df183f7dfe60f731268" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a5fa8e538524f03a94ae5dd57812531" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/92/92ea26bfa1fe3f24b86a8092e594cb46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/92/92ea26bfa1fe3f24b86a8092e594cb46.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a8aea3b058d94732a4541e3612f4414c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/ca766ae803a9825428dfb407470ac3ab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/cc/cc5df4786a6444e08ebb2a277fc44a85" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cc/cc5df4786a6444e08ebb2a277fc44a85" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d9/d9cf46f661214037ac342b183e32c8f0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d9/d9cf46f661214037ac342b183e32c8f0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/db/db8d50704aa44cb42be6d9aeef27176b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e3/e3eead970db14fbe8bf679d173a6047d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7168743476d487abb07f0c5f99380e4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/feb7125de9b01a448bbdeb88d42800aa" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,22 +74,37 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/1b/df508c09/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/8f/c2b17253/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/Unity3DAIBehaviorTree-master/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/BTreeWin.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/fd/532f4e7d/GUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Unity3DAIBehaviorTree-master/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/BTreeMgr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/51/58c0f930/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB3709D4-3DAE-4F5F-B978-5D5202B86B97/b6/03b297f4/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/8f/c2b17253/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/88/92cec5ff/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/0e/6788d8fc/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F10BEC5-AA76-4D80-A229-9BD2F2B0A040/d6/2841fce3/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Unity3DAIBehaviorTree-master/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/Base/BNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/fd/532f4e7d/GUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/51/58c0f930/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/6f/9456487f/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB3709D4-3DAE-4F5F-B978-5D5202B86B97/b6/03b297f4/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/16/3e99c5e3/SupportedRenderingFeatures.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B140E050-1769-43F4-A096-6C7CFA9CC579/78/d3892a2c/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/51/f0e5dfcf/ProfilerWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/3d/8500f2f0/AudioSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/28/a84deb9f/RetainedMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/65/429b6138/Event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/5a/c63690c6/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/d1/0ead7f9a/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/a2/fb7eb95a/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/46/1d00e652/EditorCompilationInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Unity3DAIBehaviorTree-master/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/BTreeWin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/f2/347c77f6/JSProxyMgr.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -102,28 +117,43 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Texture2DFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeLoop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/SingletonBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BNodeFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/TexLineFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/Def/DefEditorBTreeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/NodeType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeCondition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeComposite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/IJson.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" />
+        <option value="$PROJECT_DIR$/Assets/defaultTree.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeDecorator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeLoop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BnodeIdie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTData/BDataBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/ActionResult.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeRestore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeParallel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/CompositeNode/BNodeSequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeEscape.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeIdle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodeDie.cs" />
+        <option value="$PROJECT_DIR$/Assets/testAI.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeAlwaysTrue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeAlwaysFalse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindowController.cs" />
-        <option value="$PROJECT_DIR$/Assets/defaultTree.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/DecoratorNode/BNodeReverse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ActionNode/BNodePoisoning.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/ConditionNode/BNodeIsHpLessThan.cs" />
+        <option value="$PROJECT_DIR$/Assets/TestAI.json" />
       </list>
     </option>
   </component>
@@ -142,7 +172,7 @@
     <property name="threadsIsVisibleKey" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -152,10 +182,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4352">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4312">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4352" />
+      <option name="pid" value="4312" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -180,6 +210,9 @@
       <workItem from="1607053615503" duration="11378000" />
       <workItem from="1607066837436" duration="3034000" />
       <workItem from="1607070652861" duration="5341000" />
+      <workItem from="1607136493248" duration="22040000" />
+      <workItem from="1607163052865" duration="5278000" />
+      <workItem from="1607170100752" duration="342000" />
     </task>
     <servers />
   </component>
@@ -204,78 +237,82 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="518" height="436" key="DebuggerActiveHint" timestamp="1606810224682">
+    <state x="137" y="20" width="1092" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607170412814">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="518" height="436" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1606810224682" />
-    <state width="1322" height="158" key="GridCell.Tab.0.bottom" timestamp="1607076237496">
+    <state x="137" y="20" width="1092" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1607170412814" />
+    <state width="518" height="436" key="DebuggerActiveHint" timestamp="1607167429425">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607076237496" />
-    <state width="1322" height="158" key="GridCell.Tab.0.center" timestamp="1607076237496">
+    <state width="518" height="436" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1607167429425" />
+    <state width="1322" height="168" key="GridCell.Tab.0.bottom" timestamp="1607168870418">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1607076237496" />
-    <state width="1322" height="158" key="GridCell.Tab.0.left" timestamp="1607076237496">
+    <state width="1322" height="168" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607168870418" />
+    <state width="1322" height="168" key="GridCell.Tab.0.center" timestamp="1607168870418">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1607076237496" />
-    <state width="1322" height="158" key="GridCell.Tab.0.right" timestamp="1607076237496">
+    <state width="1322" height="168" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1607168870418" />
+    <state width="1322" height="168" key="GridCell.Tab.0.left" timestamp="1607168870418">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1607076237496" />
-    <state width="1322" height="158" key="GridCell.Tab.1.bottom" timestamp="1607076426053">
+    <state width="1322" height="168" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1607168870418" />
+    <state width="1322" height="168" key="GridCell.Tab.0.right" timestamp="1607168870418">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607076426053" />
-    <state width="1322" height="158" key="GridCell.Tab.1.center" timestamp="1607076426037">
+    <state width="1322" height="168" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1607168870418" />
+    <state width="1322" height="168" key="GridCell.Tab.1.bottom" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1607076426037" />
-    <state width="1322" height="158" key="GridCell.Tab.1.left" timestamp="1607076426006">
+    <state width="1322" height="168" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.1.center" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1607076426006" />
-    <state width="1322" height="158" key="GridCell.Tab.1.right" timestamp="1607076426037">
+    <state width="1322" height="168" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.1.left" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1607076426037" />
-    <state width="1322" height="158" key="GridCell.Tab.2.bottom" timestamp="1607076225417">
+    <state width="1322" height="168" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.1.right" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607076225417" />
-    <state width="1322" height="158" key="GridCell.Tab.2.center" timestamp="1607076225355">
+    <state width="1322" height="168" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.2.bottom" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1607076225355" />
-    <state width="1322" height="158" key="GridCell.Tab.2.left" timestamp="1607076225230">
+    <state width="1322" height="168" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.2.center" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1607076225230" />
-    <state width="1322" height="158" key="GridCell.Tab.2.right" timestamp="1607076225417">
+    <state width="1322" height="168" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.2.left" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1607076225417" />
-    <state width="1322" height="158" key="GridCell.Tab.3.bottom" timestamp="1607076225448">
+    <state width="1322" height="168" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.2.right" timestamp="1607168869637">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607076225448" />
-    <state width="1322" height="158" key="GridCell.Tab.3.center" timestamp="1607076225448">
+    <state width="1322" height="168" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1607168869637" />
+    <state width="1322" height="168" key="GridCell.Tab.3.bottom" timestamp="1607168869652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1607076225448" />
-    <state width="1322" height="158" key="GridCell.Tab.3.left" timestamp="1607076225448">
+    <state width="1322" height="168" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1607168869652" />
+    <state width="1322" height="168" key="GridCell.Tab.3.center" timestamp="1607168869652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1607076225448" />
-    <state width="1322" height="158" key="GridCell.Tab.3.right" timestamp="1607076225448">
+    <state width="1322" height="168" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1607168869652" />
+    <state width="1322" height="168" key="GridCell.Tab.3.left" timestamp="1607168869652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="158" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1607076225448" />
-    <state x="499" y="68" key="RiderGenerateDialog" timestamp="1607063821648">
+    <state width="1322" height="168" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1607168869652" />
+    <state width="1322" height="168" key="GridCell.Tab.3.right" timestamp="1607168869652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="499" y="68" key="RiderGenerateDialog/0.0.1366.738@0.0.1366.738" timestamp="1607063821648" />
+    <state width="1322" height="168" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1607168869652" />
+    <state x="499" y="68" key="RiderGenerateDialog" timestamp="1607154855118">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="499" y="68" key="RiderGenerateDialog/0.0.1366.738@0.0.1366.738" timestamp="1607154855118" />
     <state x="193" y="0" key="SettingsEditor" timestamp="1606714878496">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -284,30 +321,47 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="VCS.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1607055879313" />
+    <state x="0" y="0" width="690" height="544" key="dock-window-1" timestamp="1607167639828">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="0" y="0" width="690" height="544" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1607167639828" />
     <state x="332" y="101" width="701" height="536" key="find.popup" timestamp="1607064069433">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="332" y="101" width="701" height="536" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1607064069433" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1607057759496">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1607141445630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1607057759496" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1607141445630" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Editor/EditorRbtBehaviorTree/BTreeMainWindow.cs</url>
-          <line>383</line>
-          <properties documentPath="D:\gitRepository\RbtBehaviorTree\Assets\Scripts\Editor\EditorRbtBehaviorTree\BTreeMainWindow.cs" initialLine="383">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs</url>
+          <line>80</line>
+          <properties documentPath="D:\gitRepository\RbtBehaviorTree\Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeBase.cs" initialLine="80">
             <startOffsets>
-              <option value="15571" />
+              <option value="2251" />
             </startOffsets>
             <endOffsets>
-              <option value="15593" />
+              <option value="2268" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/RbtBehaviorTree/BTNode/Base/BNodeBase.cs</url>
+          <line>85</line>
+          <properties documentPath="D:\gitRepository\RbtBehaviorTree\Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeBase.cs" initialLine="85">
+            <startOffsets>
+              <option value="2453" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2467" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

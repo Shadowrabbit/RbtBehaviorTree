@@ -70,6 +70,12 @@
     <Compile Include="Assets\Scripts\Base\SingletonBase.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BNodeFactory.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTData\BDataBase.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ActionNode\BNodeDie.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ActionNode\BNodeEscape.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ActionNode\BNodeIdle.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ActionNode\BNodePoisoning.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ActionNode\BNodeRestore.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\ActionResult.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeAction.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeBase.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeComposite.cs" />
@@ -77,11 +83,15 @@
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeDecorator.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\BNodeType.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\Base\BTree.cs" />
-    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeLoop.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeParallel.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeRandom.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeSelector.cs" />
     <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\CompositeNode\BNodeSequence.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\ConditionNode\BNodeIsHpLessThan.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\DecoratorNode\BNodeAlwaysFalse.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\DecoratorNode\BNodeAlwaysTrue.cs" />
+    <Compile Include="Assets\Scripts\RbtBehaviorTree\BTNode\DecoratorNode\BNodeReverse.cs" />
+    <Compile Include="Assets\Scripts\TestEntity.cs" />
     <Reference Include="Unity.DocZh.Editor">
       <HintPath>D:/gitRepository/RbtBehaviorTree/Library/ScriptAssemblies/Unity.DocZh.Editor.dll</HintPath>
     </Reference>

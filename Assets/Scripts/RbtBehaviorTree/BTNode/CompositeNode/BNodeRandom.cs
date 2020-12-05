@@ -22,9 +22,9 @@ namespace SR.RbtBehaviorTree
             _runningIndex = Random.Range(0, _listChildNodes.Count);
         }
 
-        protected override ActionResult OnRunning(BDataBase bData)
+        protected override void OnRunning(BDataBase bData)
         {
-            return _listChildNodes[_runningIndex].UpdateNode(bData);
+            _listChildNodes[_runningIndex].UpdateNode(bData);
         }
     }
 }

@@ -30,12 +30,13 @@ namespace SR.RbtBehaviorTree
             }
         }
 
-        protected override ActionResult OnRunning(BDataBase bData)
+        protected override void OnRunning(BDataBase bData)
         {
             //全部节点执行完毕
             if (_finishedNodeCount >= _listChildNodes.Count)
             {
-                return ActionResult.Success;
+                _actionResult = ActionResult.Success;
+                return;
             }
 
             //尝试执行每一个子节点
@@ -47,16 +48,17 @@ namespace SR.RbtBehaviorTree
                     continue;
                 }
 
+                var node = _listChildNodes[i];
                 //当前子节点的执行结果
-                var actionResult = _listChildNodes[i].UpdateNode(bData);
+                var actionResult = node.UpdateNode(bData);
                 //当前节点执行中 跳过
                 if (actionResult == ActionResult.Running) continue;
-                //当前子节点执行完毕
+                //当前子节点执行完毕 完成节点数量++
                 _finishedNodeCount++;
                 _mapNodeIndexToComplete[i] = true;
             }
 
-            return ActionResult.Running;
+            _actionResult = ActionResult.Running;
         }
     }
 }

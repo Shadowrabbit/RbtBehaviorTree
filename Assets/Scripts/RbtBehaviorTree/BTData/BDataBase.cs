@@ -11,6 +11,7 @@ namespace SR.RbtBehaviorTree
 {
     public class BDataBase
     {
-    
+        public int maxHpValue; //最大生命值
+        public int currentHpValue; //生命值
     }
 }

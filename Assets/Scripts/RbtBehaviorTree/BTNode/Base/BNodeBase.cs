@@ -9,7 +9,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using _3rd.LitJson;
 using UnityEngine;
 
@@ -17,21 +16,16 @@ namespace SR.RbtBehaviorTree
 {
     public class BNodeBase : IJson
     {
-        /// <summary>
-        /// 节点执行结果
-        /// </summary>
-        public enum ActionResult
-        {
-            Idle = 0, //待机中
-            Success = 1, //成功    
-            Running = 2, //运行中
-            Failure = 3, //失败
-        }
-
-        private ActionResult _actionResult; //节点执行结果
+        protected ActionResult _actionResult = ActionResult.Idle; //节点状态
         protected BNodeBase _parent; //父节点
         protected List<BNodeBase> _listChildNodes = new List<BNodeBase>(); //子节点列表
         public virtual BNodeType NodeType => BNodeType.None; //节点类型
+
+        public ActionResult ActionResult
+        {
+            get => _actionResult;
+            set => _actionResult = value;
+        }
 
         public BNodeBase Parent
         {
@@ -51,16 +45,15 @@ namespace SR.RbtBehaviorTree
         /// <param name="bData"></param>
         protected virtual void OnEnter(BDataBase bData)
         {
-            _actionResult = ActionResult.Idle;
+            _actionResult = ActionResult.Running;
         }
 
         /// <summary>
         /// 运行中回调
         /// </summary>
         /// <param name="bData"></param>
-        protected virtual ActionResult OnRunning(BDataBase bData)
+        protected virtual void OnRunning(BDataBase bData)
         {
-            return ActionResult.Success;
         }
 
         /// <summary>
@@ -69,6 +62,7 @@ namespace SR.RbtBehaviorTree
         /// <param name="bData"></param>
         protected virtual void OnExit(BDataBase bData)
         {
+            _actionResult = ActionResult.Idle;
         }
 
         /// <summary>
@@ -77,22 +71,20 @@ namespace SR.RbtBehaviorTree
         /// <returns></returns>
         public ActionResult UpdateNode(BDataBase bData)
         {
-            //待机状态 进入当前节点
+            //第一次执行该节点
             if (_actionResult == ActionResult.Idle)
             {
                 OnEnter(bData);
-                _actionResult = ActionResult.Running;
             }
 
-            //当前帧动作执行结果
-            var actionResult = OnRunning(bData);
+            //当前节点执行结果
+            OnRunning(bData);
             //执行中
-            if (actionResult == ActionResult.Running) return _actionResult;
+            if (_actionResult == ActionResult.Running) return ActionResult.Running;
+            var cacheActionResult = _actionResult;
             //执行结束
             OnExit(bData);
-            _actionResult = ActionResult.Idle;
-
-            return _actionResult;
+            return cacheActionResult;
         }
 
         /// <summary>

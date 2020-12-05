@@ -64,7 +64,7 @@ namespace SR.RbtBehaviorTree
 
             //文件储存路径
             var savePath = EditorUtility.SaveFilePanel(DefEditorBTreeUI.SAVE_TREE,
-                Application.dataPath, DefEditorBTreeUI.DEFAULT_TREE_NAME, "json");
+                Application.dataPath, _model.name ?? DefEditorBTreeUI.DEFAULT_TREE_NAME, "json");
             var strJson = _model.WriteJson().ToJson();
             File.WriteAllText(savePath, strJson);
             Debug.Log("保存成功" + savePath);

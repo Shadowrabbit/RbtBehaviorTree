@@ -41,7 +41,15 @@
               <e p="BDataBase.cs" t="Include" />
             </e>
             <e p="BTNode" t="Include">
+              <e p="ActionNode" t="Include">
+                <e p="BNodeDie.cs" t="Include" />
+                <e p="BNodeEscape.cs" t="Include" />
+                <e p="BNodeIdle.cs" t="Include" />
+                <e p="BNodePoisoning.cs" t="Include" />
+                <e p="BNodeRestore.cs" t="Include" />
+              </e>
               <e p="Base" t="Include">
+                <e p="ActionResult.cs" t="Include" />
                 <e p="BNodeAction.cs" t="Include" />
                 <e p="BNodeBase.cs" t="Include" />
                 <e p="BNodeComposite.cs" t="Include" />
@@ -51,14 +59,22 @@
                 <e p="BTree.cs" t="Include" />
               </e>
               <e p="CompositeNode" t="Include">
-                <e p="BNodeLoop.cs" t="Include" />
                 <e p="BNodeParallel.cs" t="Include" />
                 <e p="BNodeRandom.cs" t="Include" />
                 <e p="BNodeSelector.cs" t="Include" />
                 <e p="BNodeSequence.cs" t="Include" />
               </e>
+              <e p="ConditionNode" t="Include">
+                <e p="BNodeIsHpLessThan.cs" t="Include" />
+              </e>
+              <e p="DecoratorNode" t="Include">
+                <e p="BNodeAlwaysFalse.cs" t="Include" />
+                <e p="BNodeAlwaysTrue.cs" t="Include" />
+                <e p="BNodeReverse.cs" t="Include" />
+              </e>
             </e>
           </e>
+          <e p="TestEntity.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
